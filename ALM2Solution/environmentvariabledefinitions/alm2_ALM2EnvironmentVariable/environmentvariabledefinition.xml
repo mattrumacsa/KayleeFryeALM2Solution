@@ -1,0 +1,10 @@
+<environmentvariabledefinition schemaname="alm2_ALM2EnvironmentVariable">
+  <displayname default="ALM 2 Environment Variable">
+    <label description="ALM 2 Environment Variable" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

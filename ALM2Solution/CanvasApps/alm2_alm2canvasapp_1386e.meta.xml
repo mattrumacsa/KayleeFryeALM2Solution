@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>alm2_alm2canvasapp_1386e</Name>
+  <AppVersion>2024-11-12T20:32:52Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.24112.4.0</CreatedByClientVersion>
+  <MinClientVersion>3.24112.4.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24112.4","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20241112T202658Z-3.24112.4.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>ALM 2 Canvas App</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"bc090496-cc1f-4735-80d8-ccffa1e56474":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png","dataSources":["ALM2Flow"],"dependencies":[],"dependents":[],"parameterHints":{"workflowName":{"value":"b208f573-b8fe-4e7a-a2ab-b4100c24afed"},"workflowEntityId":{"value":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd"},"workflowDisplayName":{"value":"ALM 2 Flow"}},"parameterHintsV2":{"workflowName":{"value":"b208f573-b8fe-4e7a-a2ab-b4100c24afed"},"workflowEntityId":{"value":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd"},"workflowDisplayName":{"value":"ALM 2 Flow"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"dependencyid":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd","componenttype":29,"componenttypeplatformname":"Workflow"}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/alm2_alm2canvasapp_1386e_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/alm2_alm2canvasapp_1386e_DocumentUri.msapp</DocumentUri>
+  <AdditionalUris>
+    <AdditionalUri>/CanvasApps/alm2_alm2canvasapp_1386e_AdditionalUris0_identity.json</AdditionalUri>
+  </AdditionalUris>
+</CanvasApp>
