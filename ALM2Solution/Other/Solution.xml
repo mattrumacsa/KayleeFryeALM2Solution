@@ -78,9 +78,17 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="29" id="{290f7b89-b4a1-ef11-8a69-6045bd09c8c1}" behavior="0" />
       <RootComponent type="29" id="{94f75ae3-34a1-ef11-8a69-6045bd09c8dd}" behavior="0" />
       <RootComponent type="300" schemaName="alm2_alm2canvasapp_1386e" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="environmentvariabledefinition" displayName="Environment Variable Definition" solution="EnvironmentVariables (1.0.2406.4)">
+          <package>EnvironmentVariablesSolutionAnchor (1.0.2406.4)</package>
+        </Required>
+        <Dependent type="29" displayName="ALM 2 Environment Variable List (Power Apps)" id="{290f7b89-b4a1-ef11-8a69-6045bd09c8c1}" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>

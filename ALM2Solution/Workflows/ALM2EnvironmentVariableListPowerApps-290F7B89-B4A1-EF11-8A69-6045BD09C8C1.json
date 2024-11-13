@@ -1,0 +1,492 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "alm2_ALM2DataverseConnectionReference"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "4733462c-7c5f-4e30-8adb-0ebca3870ea1"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            }
+          }
+        }
+      },
+      "actions": {
+        "List_rows": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "df26f967-a9b2-4c9e-be7c-8f36ba9848ad"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "environmentvariabledefinitions"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Response": {
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "9ccb9aa1-9be7-4a66-ac1b-36f243f90c8a"
+          },
+          "type": "Response",
+          "kind": "Http",
+          "inputs": {
+            "statusCode": 200,
+            "body": "@outputs('List_rows')?['body/value']",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "@@odata.type": {
+                    "type": "string"
+                  },
+                  "@@odata.id": {
+                    "type": "string"
+                  },
+                  "@@odata.etag": {
+                    "type": "string"
+                  },
+                  "@@odata.editLink": {
+                    "type": "string"
+                  },
+                  "_owningbusinessunit_value@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "_owningbusinessunit_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
+                    "type": "string"
+                  },
+                  "_owningbusinessunit_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                    "type": "string"
+                  },
+                  "_owningbusinessunit_value@odata.type": {
+                    "type": "string"
+                  },
+                  "_owningbusinessunit_value": {
+                    "type": "string"
+                  },
+                  "statuscode@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "statuscode": {
+                    "type": "integer"
+                  },
+                  "introducedversion": {
+                    "type": "string"
+                  },
+                  "statecode@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "statecode": {
+                    "type": "integer"
+                  },
+                  "_modifiedby_value@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "_modifiedby_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                    "type": "string"
+                  },
+                  "_modifiedby_value@odata.type": {
+                    "type": "string"
+                  },
+                  "_modifiedby_value": {
+                    "type": "string"
+                  },
+                  "solutionid@odata.type": {
+                    "type": "string"
+                  },
+                  "solutionid": {
+                    "type": "string"
+                  },
+                  "modifiedon@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "modifiedon@odata.type": {
+                    "type": "string"
+                  },
+                  "modifiedon": {
+                    "type": "string"
+                  },
+                  "ismanaged@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "ismanaged": {
+                    "type": "boolean"
+                  },
+                  "overwritetime@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "overwritetime@odata.type": {
+                    "type": "string"
+                  },
+                  "overwritetime": {
+                    "type": "string"
+                  },
+                  "componentstate@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "componentstate": {
+                    "type": "integer"
+                  },
+                  "schemaname": {
+                    "type": "string"
+                  },
+                  "versionnumber@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "versionnumber@odata.type": {
+                    "type": "string"
+                  },
+                  "versionnumber": {
+                    "type": "integer"
+                  },
+                  "_owninguser_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                    "type": "string"
+                  },
+                  "_owninguser_value@odata.type": {
+                    "type": "string"
+                  },
+                  "_owninguser_value": {
+                    "type": "string"
+                  },
+                  "_createdby_value@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "_createdby_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                    "type": "string"
+                  },
+                  "_createdby_value@odata.type": {
+                    "type": "string"
+                  },
+                  "_createdby_value": {
+                    "type": "string"
+                  },
+                  "secretstore@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "secretstore": {
+                    "type": "integer"
+                  },
+                  "environmentvariabledefinitionidunique@odata.type": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinitionidunique": {
+                    "type": "string"
+                  },
+                  "createdon@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "createdon@odata.type": {
+                    "type": "string"
+                  },
+                  "createdon": {
+                    "type": "string"
+                  },
+                  "type@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "integer"
+                  },
+                  "_ownerid_value@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "_ownerid_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
+                    "type": "string"
+                  },
+                  "_ownerid_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                    "type": "string"
+                  },
+                  "_ownerid_value@odata.type": {
+                    "type": "string"
+                  },
+                  "_ownerid_value": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinitionid@odata.type": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinitionid": {
+                    "type": "string"
+                  },
+                  "isrequired@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "isrequired": {
+                    "type": "boolean"
+                  },
+                  "displayname": {
+                    "type": "string"
+                  },
+                  "iscustomizable": {
+                    "type": "object",
+                    "properties": {
+                      "@@odata.type": {
+                        "type": "string"
+                      },
+                      "Value": {
+                        "type": "boolean"
+                      },
+                      "CanBeChanged": {
+                        "type": "boolean"
+                      },
+                      "ManagedPropertyLogicalName": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "owningbusinessunit@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "owningbusinessunit@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "ownerid@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "ownerid@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "createdby@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "createdby@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "createdonbehalfby@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "createdonbehalfby@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "modifiedby@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "modifiedby@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "modifiedonbehalfby@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "modifiedonbehalfby@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "owninguser@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "owninguser@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "owningteam@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "owningteam@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_SyncErrors@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_SyncErrors@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_DuplicateMatchingRecord@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_DuplicateMatchingRecord@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_DuplicateBaseRecord@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_DuplicateBaseRecord@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_AsyncOperations@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_AsyncOperations@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_MailboxTrackingFolders@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_MailboxTrackingFolders@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_UserEntityInstanceDatas@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_UserEntityInstanceDatas@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_ProcessSession@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_ProcessSession@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_BulkDeleteFailures@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_BulkDeleteFailures@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_PrincipalObjectAttributeAccesses@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_PrincipalObjectAttributeAccesses@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "ParentDefinitionId@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "ParentDefinitionId@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "envdefinition_envdefinition@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "envdefinition_envdefinition@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_flowmachinenetwork_domainpassword@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_flowmachinenetwork_domainpassword@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_domainusername@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_domainusername@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_password@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_password@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_username@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_username@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_cyberarksafe@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_cyberarksafe@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_cyberarkobject@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_cyberarkobject@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_cyberarkusername@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_cyberarkusername@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_certificate@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_credential_certificate@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "bot_environmentvariabledefinition@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "bot_environmentvariabledefinition@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "botcomponent_environmentvariabledefinition@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "botcomponent_environmentvariabledefinition@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "EnvironmentVariableDefinition_ReportParameters@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "EnvironmentVariableDefinition_ReportParameters@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "msdyn_connectordatasource_environmentvari@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "msdyn_connectordatasource_environmentvari@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "envvardefinition_powerbimashupparameter@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "envvardefinition_powerbimashupparameter@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_environmentvariablevalue@odata.associationLink": {
+                    "type": "string"
+                  },
+                  "environmentvariabledefinition_environmentvariablevalue@odata.navigationLink": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "defaultvalue": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

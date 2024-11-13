@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{94f75ae3-34a1-ef11-8a69-6045bd09c8dd}" Name="ALM 2 Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <JsonFileName>/Workflows/ALM2Flow-94F75AE3-34A1-EF11-8A69-6045BD09C8DD.json</JsonFileName>
+<Workflow WorkflowId="{290f7b89-b4a1-ef11-8a69-6045bd09c8c1}" Name="ALM 2 Environment Variable List (Power Apps)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <JsonFileName>/Workflows/ALM2EnvironmentVariableListPowerApps-290F7B89-B4A1-EF11-8A69-6045BD09C8C1.json</JsonFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>5</Category>
@@ -21,6 +21,6 @@
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
   <PrimaryEntity>none</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="ALM 2 Flow" />
+    <LocalizedName languagecode="1033" description="ALM 2 Environment Variable List (Power Apps)" />
   </LocalizedNames>
 </Workflow>

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>alm2_alm2canvasapp_1386e</Name>
-  <AppVersion>2024-11-12T20:32:52Z</AppVersion>
+  <AppVersion>2024-11-13T11:52:01Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.24112.4.0</CreatedByClientVersion>
   <MinClientVersion>3.24112.4.0</MinClientVersion>
-  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24112.4","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20241112T202658Z-3.24112.4.0"}</Tags>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24112.4","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20241112T203252Z-3.24112.4.0"}</Tags>
   <IsCdsUpgraded>0</IsCdsUpgraded>
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
@@ -14,7 +14,7 @@
   <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher xsi:nil="true"></Publisher>
   <AuthorizationReferences>[]</AuthorizationReferences>
-  <ConnectionReferences>{"bc090496-cc1f-4735-80d8-ccffa1e56474":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png","dataSources":["ALM2Flow"],"dependencies":[],"dependents":[],"parameterHints":{"workflowName":{"value":"5a1f48c9-471f-4e4e-97c2-350886ffe896"},"workflowEntityId":{"value":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd"},"workflowDisplayName":{"value":"ALM 2 Flow"}},"parameterHintsV2":{"workflowName":{"value":"5a1f48c9-471f-4e4e-97c2-350886ffe896"},"workflowEntityId":{"value":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd"},"workflowDisplayName":{"value":"ALM 2 Flow"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]}}</ConnectionReferences>
+  <ConnectionReferences>{"1cf173f5-30e1-4e3d-b032-714d9c4ed35c":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png","dataSources":["ALM2EnvironmentVariableList(PowerApps)"],"dependencies":["20e37808-6bf2-4083-a8b4-954fa3a43615"],"dependents":[],"parameterHints":{"workflowName":{"value":"c6f963c4-91c9-4774-8470-69be8b925511"},"workflowEntityId":{"value":"290f7b89-b4a1-ef11-8a69-6045bd09c8c1"},"workflowDisplayName":{"value":"ALM 2 Environment Variable List (Power Apps)"},"20e37808-6bf2-4083-a8b4-954fa3a43615":{"value":"shared_commondataserviceforapps"}},"parameterHintsV2":{"workflowName":{"value":"c6f963c4-91c9-4774-8470-69be8b925511"},"workflowEntityId":{"value":"290f7b89-b4a1-ef11-8a69-6045bd09c8c1"},"workflowDisplayName":{"value":"ALM 2 Environment Variable List (Power Apps)"},"shared_commondataserviceforapps":{"value":"20e37808-6bf2-4083-a8b4-954fa3a43615"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"20e37808-6bf2-4083-a8b4-954fa3a43615":{"id":"/providers/microsoft.powerapps/apis/shared_commondataserviceforapps","displayName":"Microsoft Dataverse","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1716/1.0.1716.3922/commondataserviceforapps/icon.png","dataSources":[],"dependencies":[],"dependents":["1cf173f5-30e1-4e3d-b032-714d9c4ed35c"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Premium"},"bc090496-cc1f-4735-80d8-ccffa1e56474":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png","dataSources":["ALM2EnvironmentVariableGet(PowerApps)"],"dependencies":[],"dependents":[],"parameterHints":{"workflowName":{"value":"5bf206e5-b971-48ed-9187-8054b861e6c0"},"workflowEntityId":{"value":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd"},"workflowDisplayName":{"value":"ALM 2 Environment Variable Get (Power Apps)"}},"parameterHintsV2":{"workflowName":{"value":"5bf206e5-b971-48ed-9187-8054b861e6c0"},"workflowEntityId":{"value":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd"},"workflowDisplayName":{"value":"ALM 2 Environment Variable Get (Power Apps)"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]}}</ConnectionReferences>
   <DatabaseReferences>{}</DatabaseReferences>
   <AppComponents>[]</AppComponents>
   <AppComponentDependencies>[]</AppComponentDependencies>
@@ -24,7 +24,7 @@
   <AdminControlBypassConsent>0</AdminControlBypassConsent>
   <EmbeddedApp xsi:nil="true"></EmbeddedApp>
   <IntroducedVersion>1.0</IntroducedVersion>
-  <CdsDependencies>{"cdsdependencies":[{"dependencyid":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd","componenttype":29,"componenttypeplatformname":"Workflow"}]}</CdsDependencies>
+  <CdsDependencies>{"cdsdependencies":[{"dependencyid":"290f7b89-b4a1-ef11-8a69-6045bd09c8c1","componenttype":29,"componenttypeplatformname":"Workflow"},{"dependencyid":"94f75ae3-34a1-ef11-8a69-6045bd09c8dd","componenttype":29,"componenttypeplatformname":"Workflow"}]}</CdsDependencies>
   <IsCustomizable>1</IsCustomizable>
   <BackgroundImageUri>/CanvasApps/alm2_alm2canvasapp_1386e_BackgroundImageUri</BackgroundImageUri>
   <DocumentUri>/CanvasApps/alm2_alm2canvasapp_1386e_DocumentUri.msapp</DocumentUri>
