@@ -4,5 +4,12 @@
       "SchemaName": "alm2_ALM2EnvironmentVariable",
       "Value": "Kaylee Frye - GitHub"
     }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "alm2_ALM2DataverseConnectionReference",
+      "ConnectionId": "01239f84790c48fba93a856b6cf0faa6",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    }
   ]
 }
