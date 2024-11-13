@@ -8,7 +8,7 @@
   "ConnectionReferences": [
     {
       "LogicalName": "alm2_ALM2DataverseConnectionReference",
-      "ConnectionId": "shared-commondataser-5a39542f-85a9-464a-80db-633d67e843b5",
+      "ConnectionId": "5a39542f85a9464a80db633d67e843b5",
       "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
     }
   ]
