@@ -41,5 +41,5 @@ jobs:
         solution-file: ${{ inputs.solution-name }}_managed.zip
         force-overwrite: true
         publish-changes: true
-   #     use-deployment-settings-file: true
-   #     deployment-settings-file: Settings/DeploymentSettings.json
+        use-deployment-settings-file: true
+        deployment-settings-file: Settings/DeploymentSettings.json
