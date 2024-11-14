@@ -31,7 +31,7 @@ jobs:
         client-secret: ${{ secrets.CLIENT_SECRET }}
         tenant-id: ${{ secrets.TENANT_ID }}
    
-    - name: Import solution to destination en
+    - name: Import solution to destination environment
       uses: microsoft/powerplatform-actions/import-solution@v1
       with:
         environment-url: ${{ vars.PROD_ENVIRONMENT_URL }}
