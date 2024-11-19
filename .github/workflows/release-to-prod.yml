@@ -6,6 +6,12 @@ on:
       solution-name:
         required: true
         default: ALM2Solution
+  release:
+    types: [created]
+    inputs:
+      solution-name:
+        required: true
+        default: ALM2Solution
 permissions:
   contents: write
   
