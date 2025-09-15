@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24111.164" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24111.164" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24111.00176">
+<ImportExportXml version="9.2.25091.132" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25091.132" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25092.00135">
   <SolutionManifest>
     <UniqueName>ALM2Solution</UniqueName>
     <LocalizedNames>
@@ -85,7 +85,7 @@
     <MissingDependencies>
       <MissingDependency>
         <Required type="1" schemaName="environmentvariabledefinition" displayName="Environment Variable Definition" solution="EnvironmentVariables (1.0.2406.4)">
-          <package>EnvironmentVariablesSolutionAnchor (1.0.2406.4)</package>
+          <package appName="EnvironmentVariables" version="1.0.2406.4">EnvironmentVariablesSolutionAnchor (1.0.2406.4)</package>
         </Required>
         <Dependent type="29" displayName="ALM 2 Environment Variable List (Power Apps)" id="{290f7b89-b4a1-ef11-8a69-6045bd09c8c1}" />
       </MissingDependency>
